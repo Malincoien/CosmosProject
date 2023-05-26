@@ -71,7 +71,7 @@
 					session_start();
 					$_SESSION['username'] = $username;
 					$_SESSION['password'] = $password;
-					header('location: shop.php');
+					header('location: shop.html');
 
 				}else{
 					//Ugyldig login
