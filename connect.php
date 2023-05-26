@@ -1,6 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "malin";
+$servername = "10.2.2.237";
+$username = "admin";
 $password = "cosmos127";
 
 // Create connection
