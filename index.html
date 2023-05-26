@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cosmos home page</title>
+</head>
+<body>
+    <header>
+
+        <a href="#" class="logo">Cosmos</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about" id="aboutus">About Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="login.php">Log In</a></li>
+            <li><a href="test.php">test</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Bilder/Sky.png" alt=sky id="sky">
+        <img src="Bilder/moon.png" alt="moon" id="moon">
+        <h2 id="welcome">Your reliable <br> online thrift store </h2>
+        <img src="Bilder/Landscape.png" alt="landscape" id="landscape">
+    </section>
+    <div class="about" id="about">
+        <h2>About Cosmos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum unde repellendus at harum! Consectetur, a. Explicabo, iure distinctio quia excepturi nulla ut! Rerum, natus corporis dolores omnis maiores minus illum?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi possimus velit tenetur ratione ipsa explicabo assumenda fugiat ullam numquam? Itaque ipsam ipsa provident alias velit esse veniam vero ullam delectus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi sint magni blanditiis ipsum nihil. Nam et hic excepturi tenetur vero. Fugit vitae voluptatem reprehenderit porro incidunt praesentium similique consequatur?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, suscipit officiis nobis id doloribus, temporibus alias quidem, voluptatem fuga magnam placeat cum vero vel sapiente ullam autem esse illum maiores?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur dicta quis. Deserunt nobis sed dolore iure, laudantium quasi explicabo magni commodi facere asperiores fuga minus eveniet inventore deleniti repudiandae?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptate minima et dicta fugit cumque commodi repellendus eos ducimus laboriosam ipsa reprehenderit dolores aliquid numquam, aut nisi consequatur ipsam unde? <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ratione, voluptate reiciendis, animi blanditiis soluta eum quo laudantium iste tempora deleniti velit fugiat iusto odio? Aspernatur esse ad voluptates! Tempore!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque explicabo iusto dicta animi iste, odit eligendi molestias aperiam quia sunt. Fuga facere sit assumenda error eos itaque tempore cum ducimus!
+            <br><br>
+        </p>
+    </div>
+    <script>
+        let sky = document.getElementById('sky');
+        let moon = document.getElementById('moon');
+        let welcome = document.getElementById('welcome');
+        let landscape = document.getElementById('landscape');
+        let aboutus = document.getElementById('aboutus');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            sky.style.top = value * 0.35 + 'px';
+            moon.style.top = value * 0.55 + 'px';
+            welcome.style.margintop = value * 0.55 + 'px';
+            header.style.top = value * 0.55 + 'px';
+        })
+    </script>
+</body>
+</html>
