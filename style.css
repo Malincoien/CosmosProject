@@ -51,8 +51,8 @@ header .logo{
    color: #fff;
    font-weight: 800;
    text-decoration: none;
+   font-family: Afronaut;
    font-size: 2em;
-   text-transform: uppercase;
    letter-spacing: 2px;
 }
 
@@ -120,25 +120,43 @@ section img#moon{
 
 #welcome{
    position: absolute;
-   font-family: 'poppins' bold;
+   font-family: Afronaut;
+   word-spacing: 4px;
+   line-height: 60px;
+   letter-spacing: 4px;
    margin-left: 30%;
    margin-right: 10%;
    margin-top: 5%;
    margin-bottom: 20%;
    color: #fff;
    white-space: nowrap;
-   font-size: 55px;
+   font-size: 50px;
+}
+
+#welcome2{
+   position: absolute;
+   font-family: Verdana;
+   font-style: italic;
+   line-height: 60px;
+   margin-left: 38.5%;
+   margin-right: 10%;
+   margin-top: 10.4%;
+   margin-bottom: 20%;
+   color: #fff;
+   white-space: nowrap;
+   font-size: 50px;
 }
 
 .about{
    position: relative;
-   padding: 100px;
+   padding: 50px;
    background: linear-gradient(to top, #32114f, #42207c);
 
 }
 
 .about h2{
    font-size: 3.6em;
+   font-family: Afronaut;
    margin-bottom: 10px;
    color: #fff;
 }
