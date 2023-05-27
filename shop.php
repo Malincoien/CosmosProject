@@ -9,14 +9,20 @@
 </head>
 <body>
    <header>
+   <a href="#" class="logo">Logo</a>
+        <ul class="navmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="#" class="active">Shop</a></li>
+        </ul>
 
-      <a href="#" class="logo">cosmos</a>
-      <ul>
-         <li><a href="index.html">Home</a></li>
-         <li><a href="#about" id="aboutus">About Us</a></li>
-         <li><a href="shop.php" class="active">Shop</a></li>
-         <li><a href="#">FAQ</a></li>
-      </ul>
+        <div class="nav-icons">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-basket-shopping"></i>
+            <div class="cart-quantity">0</div>
+            <div class="cart-text">Cart</div>
+            </a>
+        </div>
    </header>
 </body>
 </html>
