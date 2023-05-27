@@ -133,20 +133,6 @@ section img#moon{
    font-size: 50px;
 }
 
-#welcome2{
-   position: absolute;
-   font-family: Verdana;
-   font-style: italic;
-   line-height: 60px;
-   margin-left: 38.5%;
-   margin-right: 10%;
-   margin-top: 10.4%;
-   margin-bottom: 20%;
-   color: #fff;
-   white-space: nowrap;
-   font-size: 50px;
-}
-
 .about{
    position: relative;
    padding: 50px;
