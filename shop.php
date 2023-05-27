@@ -8,5 +8,15 @@
     <title>Products</title>
 </head>
 <body>
+   <header>
+
+      <a href="#" class="logo">cosmos</a>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="#about" id="aboutus">About Us</a></li>
+         <li><a href="shop.php" class="active">Shop</a></li>
+         <li><a href="#">FAQ</a></li>
+      </ul>
+   </header>
 </body>
 </html>
