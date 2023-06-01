@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   scroll-behavior: smooth;
+}
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-image: url('Bilder/BakgrunnEnkel.png');
+   background-attachment: fixed;
+   background-repeat: no-repeat;  
+   background-size: cover;
+} 
+
+#logged-out-text{
+   position: absolute;
+   color: white;
+   top: 40%;
+}
+
+#logged-out-btn{
+   margin-top: -15px;
+   width: 100%;
+   height: 50px;
+   margin: 10px;
+   border-radius: 15px;
+   cursor: pointer;
+   font-size: 1em;
+   font-weight: 500;
+}
+
+#logged-out-btn:hover{
+   background-color: #A8A1A1;
+   transition: .5s;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <header>
+      <a href="#" class="logo">Cosmos</a>
+      <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about" id="aboutus">About Us</a></li>
+          <li><a href="shop.php" class="shop-button">Shop</a></li>
+          <li><a href="logged-out.html">Log out</a></li>
+          <li><a href="faq.html">faq</a></li>
+      </ul>
+  </header>
+  <section>
+      <img src="Bilder/Sky.png" alt=sky id="sky">
+      <img src="Bilder/moon.png" alt="moon" id="moon">
+      <h2 id="welcome">Your reliable <br> online thrift store </h2>
+      <img src="Bilder/Landscape.png" alt="landscape" id="landscape">
+  </section>
+  <div class="about" id="about">
+      <h2>About Cosmos</h2>
+      <p>We at Cosmos believe in sustainability 
+         in reusing old clothing and second-hand items. <br>
+         In a time where the old is the new, what better 
+         way to give life to the good old forgotten 
+         gems than to give them a new home! <br> <br>
+         To use the website you need to be 
+         logged in first, if you don't have <br>
+         an existing account, you can 
+         make one easily! <br>
+
+         Information about every item
+         is stated in the description.
+         Thank you for using cosmos! 
+      </p>
+  </div>
+  <script>
+      let sky = document.getElementById('sky');
+      let moon = document.getElementById('moon');
+      let welcome = document.getElementById('welcome');
+      let landscape = document.getElementById('landscape');
+      let aboutus = document.getElementById('aboutus');
+      let header = document.querySelector('header');
+
+      window.addEventListener('scroll', function(){
+          let value = window.scrollY;
+          sky.style.top = value * 0.35 + 'px';
+          moon.style.top = value * 0.55 + 'px';
+          welcome.style.margintop = value * 0.55 + 'px';
+          header.style.top = value * 0.55 + 'px';
+      })
+  </script>
+</body>
+</html>
