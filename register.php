@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
    $password = $_POST['password'];
 
 //Koble til databasen
-$mysqli = new mysqli("10.2.2.237","admin","cosmos127","cosmos");
+$mysqli = new mysqli("localhost","admin","cosmos127","cosmos");
         
 // Check connection
 if ($mysqli -> connect_errno) {
