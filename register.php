@@ -1,6 +1,6 @@
 <?php
 
-@include 'config.php';
+include 'config.php';
 
 if(isset($_POST['submit'])){
 
@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
    $password = $_POST['password'];
 
 //Koble til databasen
-$mysqli = new mysqli("localhost","admin","cosmos127","cosmos");
+//$mysqli = new mysqli("10.2.3.36","admin","cosmos127","cosmos");
         
 // Check connection
 if ($mysqli -> connect_errno) {
@@ -18,8 +18,8 @@ if ($mysqli -> connect_errno) {
 }
 
  // prepare and bind
- $stmt = $mysqli -> prepare("INSERT INTO users (username,password) VALUES (?, ?)");
- $stmt -> bind_param("ss", $username, $password);
+ $stmt = $mysqli -> prepare("INSERT INTO users (username,password, email) VALUES (?, ?, ?)");
+ $stmt -> bind_param("sss", $username, $password, $email);
  
  $stmt->execute();
  
